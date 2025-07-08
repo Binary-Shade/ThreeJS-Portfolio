@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 import gsap from 'gsap'
 
-const DemoPhone = (props) => {
+const DemoPhone = ({...props}) => {
    const { nodes, materials } = useGLTF('/models/iphone.glb')
   const group = useRef()
   
@@ -55,7 +55,7 @@ const DemoPhone = (props) => {
                   geometry={nodes.iPhone__12_Pro_BodyFrame_0.geometry}
                   material={materials.BodyFrame}
                 />
-                {/* wallpaper */}
+                {/* wallpapr */}
                 <group>
                     <mesh
                     name='mobile-screen'

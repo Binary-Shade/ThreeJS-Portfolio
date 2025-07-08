@@ -4,7 +4,7 @@ import React from 'react'
 import { Float, useGLTF } from '@react-three/drei'
 
 const Tux = (props) => {
-  const { nodes, materials } = useGLTF('/models/tux.glb')
+  const { nodes, materials } = useGLTF('/models/tux1.glb')
   return (
     <Float floatIntensity={1} floatingRange={0.5}>
       <group {...props} dispose={null}>
@@ -33,5 +33,5 @@ const Tux = (props) => {
   )
 }
 
-useGLTF.preload('/models/tux.glb')
+useGLTF.preload('/models/tux1.glb')
 export default Tux;

@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useMemo } from 'react'
 import { useGLTF, useAnimations, useFBX } from '@react-three/drei'
 import { SkeletonUtils } from 'three/examples/jsm/Addons.js'
 import { useGraph } from '@react-three/fiber'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 
 const Developer = ({ animationName = "stray", devRef, ...props }) => {
   const group = useRef()
 
   // Load and clone the GLTF scene
-  const { scene } = useGLTF('/developer.glb')
+  const { scene } = useGLTF('/developer.glb', true, true)
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
 

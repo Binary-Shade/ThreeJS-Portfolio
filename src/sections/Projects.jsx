@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react'
+import React, { Suspense, useRef, useState } from 'react'
 import { myProjects } from '../constants'
 import { Canvas } from '@react-three/fiber'
 import { Center } from '@react-three/drei'
@@ -8,12 +8,13 @@ import { OrbitControls } from '@react-three/drei'
 const Projects = () => {
   const [currentProject, setCurrentProject] = useState(myProjects[0])
   const OptimizedDemoPhone = React.memo(DemoPhone)
-
   const handleNavigation = (direction) => {
     const currentIndex = myProjects.findIndex((project) => project === currentProject);
     const newIndex = direction === 'next' ? (currentIndex + 1) % myProjects.length : (currentIndex - 1 + myProjects.length) % myProjects.length;
     setCurrentProject(myProjects[newIndex]);
   };
+
+
   return (
     <section className='c-space my-20'>
     <p className='head-text'>My Work</p>
@@ -56,10 +57,10 @@ const Projects = () => {
           <Canvas style={{backgroundColor: `${currentProject.color}`}} className='rounded-lg'> 
             <ambientLight intensity={Math.PI} />
             <directionalLight position={[10, 10, 5]} />
-            <Center>
+            <Center> 
               <Suspense fallback={<CanvasLoader />}>
                 <group scale={0.07} position={[0, -3.3, 0]} rotation={[0, 0, 0]}>
-                  <OptimizedDemoPhone texture={currentProject.texture}/>
+                  <OptimizedDemoPhone texture={currentProject.texture} />
                 </group>
               </Suspense>
             </Center>
