@@ -28,7 +28,7 @@ A 3D interactive portfolio website built using **Three.js** and **JavaScript** t
 
 <div align="center">
   <img width="50%" alt="Screenshot_20250712_084225" src="https://github.com/user-attachments/assets/c0db1051-39ec-45cd-9cc2-38df74239196" />
-<  img width="50%"  alt="Screenshot_20250712_084241" src="https://github.com/user-attachments/assets/fbd09ac9-6800-43b4-8a0d-1419d674f0c9" />
+<img width="50%"  alt="Screenshot_20250712_084241" src="https://github.com/user-attachments/assets/fbd09ac9-6800-43b4-8a0d-1419d674f0c9" />
 </div>
 
 ---
