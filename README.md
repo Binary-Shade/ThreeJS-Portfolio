@@ -1,13 +1,81 @@
-# React + Vite
+A 3D interactive portfolio website built using **Three.js** and **JavaScript** to showcase my developer profile, skills, and projects in a visually engaging way. The site features smooth animations, responsive design, and an immersive user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌟 3D scenes rendered with Three.js
+- 🧭 Interactive camera controls
+- ⚡ Smooth scroll animations
+- 📱 Fully responsive across devices
+- 🧑‍💻 Projects, skills, and contact sections
+- 🎨 Creative and modern UI design
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ThreeJS-Portfolio
+## 🧑‍💻 Technologies Used
+
+- [Three.js](https://threejs.org/) – 3D rendering
+- HTML5 + CSS3 + JavaScript
+- GSAP – for animations
+- ScrollTrigger – scroll-based effects
+- Vite / Webpack – (if applicable)
+- Responsive Web Design techniques
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+  <img width="50%" alt="Screenshot_20250712_084225" src="https://github.com/user-attachments/assets/c0db1051-39ec-45cd-9cc2-38df74239196" />
+<  img width="50%"  alt="Screenshot_20250712_084241" src="https://github.com/user-attachments/assets/fbd09ac9-6800-43b4-8a0d-1419d674f0c9" />
+</div>
+
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Binary-Shade/ThreeJS-Portfolio.git
+cd ThreeJS-Portfolio
+````
+
+2. Install dependencies (if using a bundler like Vite or Webpack):
+
+```bash
+npm install
+```
+
+3. Run the project locally:
+
+```bash
+npm run dev
+```
+
+4. Open in browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🌍 Live Demo
+
+🔗 [View Portfolio](https://binary-shade.netlify.app)
+
+---
+
+## 👤 Author
+
+**Suresh K**
+[LinkedIn](https://linkedin.com/in/sureshk0204) 
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
